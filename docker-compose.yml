@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  docker:
+    build: ./react-docker
+    ports:
+      - 3000:3000
+  carousel:
+    build: ./cohere-carousel
+    ports:
+      - 3001:3000
